@@ -1,0 +1,602 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#9c9c9c">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="캠퍼스맵"
+            android:textColor="#FFFFFF"
+            android:textSize="22dp"/>
+    </android.support.v7.widget.Toolbar>
+    <ImageView
+
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_marginBottom="8dp"
+        android:background="@mipmap/c_bm" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#eaeaea"
+                android:orientation="vertical"
+                android:baselineAligned="false">
+
+                <GridLayout
+                    android:id="@+id/grid_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:columnCount="2"
+                    android:rowCount="10">
+
+                    <LinearLayout
+                        android:onClick="mOnClick"
+                        android:id="@+id/btn1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        android:background="#ffffff"
+                        android:orientation="horizontal"
+                        android:padding="10dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginLeft="2dp"
+                        >
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:background="@mipmap/c_b1" />
+
+                        <TextView
+
+                            android:layout_width="125dp"
+                            android:layout_height="30dp"
+                            android:background="#ffffff"
+                            android:gravity="center"
+                            android:text="대학원동" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:onClick="mOnClick"
+                        android:id="@+id/btn2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        android:background="#ffffff"
+                        android:orientation="horizontal"
+                        android:padding="10dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="2dp"
+
+                        >
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:background="@mipmap/c_b2" />
+
+                        <TextView
+
+                            android:layout_width="125dp"
+                            android:layout_height="30dp"
+                            android:background="#ffffff"
+                            android:gravity="center"
+                            android:text="90주년 기념관" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:onClick="mOnClick"
+                        android:id="@+id/btn3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        android:background="#ffffff"
+                        android:orientation="horizontal"
+                        android:padding="10dp"
+                        android:layout_marginLeft="2dp"
+
+                        >
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:background="@mipmap/c_b3" />
+
+                        <TextView
+
+                            android:layout_width="125dp"
+                            android:layout_height="30dp"
+                            android:background="#ffffff"
+                            android:gravity="center"
+                            android:text="교수연구동" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:onClick="mOnClick"
+                        android:id="@+id/btn4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        android:background="#ffffff"
+                        android:orientation="horizontal"
+                        android:padding="10dp"
+                        android:layout_marginRight="2dp"
+
+                        >
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:background="@mipmap/c_b4" />
+
+                        <TextView
+
+                            android:layout_width="125dp"
+                            android:layout_height="30dp"
+                            android:background="#ffffff"
+                            android:gravity="center"
+                            android:text="정보과학관" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:onClick="mOnClick"
+                        android:id="@+id/btn5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        android:background="#ffffff"
+                        android:orientation="horizontal"
+                        android:padding="10dp"
+                        android:layout_marginLeft="2dp"
+
+                        >
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:background="@mipmap/c_b5" />
+
+                        <TextView
+
+                            android:layout_width="125dp"
+                            android:layout_height="30dp"
+                            android:background="#ffffff"
+                            android:gravity="center"
+                            android:text="인문사회관" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:onClick="mOnClick"
+                        android:id="@+id/btn6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        android:background="#ffffff"
+                        android:orientation="horizontal"
+                        android:padding="10dp"
+                        android:layout_marginRight="2dp"
+
+                        >
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:background="@mipmap/c_b6" />
+
+                        <TextView
+
+                            android:layout_width="125dp"
+                            android:layout_height="30dp"
+                            android:background="#ffffff"
+                            android:gravity="center"
+                            android:text="예술관" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:onClick="mOnClick"
+                        android:id="@+id/btn7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        android:background="#ffffff"
+                        android:orientation="horizontal"
+                        android:padding="10dp"
+                        android:layout_marginLeft="2dp"
+
+                        >
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:background="@mipmap/c_b7" />
+
+                        <TextView
+
+                            android:layout_width="125dp"
+                            android:layout_height="30dp"
+                            android:background="#ffffff"
+                            android:gravity="center"
+                            android:text="100주년 기념탑" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:onClick="mOnClick"
+                        android:id="@+id/btn8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        android:background="#ffffff"
+                        android:orientation="horizontal"
+                        android:padding="10dp"
+                        android:layout_marginRight="2dp"
+
+                        >
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:background="@mipmap/c_b8" />
+
+                        <TextView
+
+                            android:layout_width="125dp"
+                            android:layout_height="30dp"
+                            android:background="#ffffff"
+                            android:gravity="center"
+                            android:text="피어선홀" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:onClick="mOnClick"
+                        android:id="@+id/btn9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        android:background="#ffffff"
+                        android:orientation="horizontal"
+                        android:padding="10dp"
+                        android:layout_marginLeft="2dp"
+
+                        >
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:background="@mipmap/c_b9" />
+
+                        <TextView
+
+                            android:layout_width="125dp"
+                            android:layout_height="30dp"
+                            android:background="#ffffff"
+                            android:gravity="center"
+                            android:text="대학광장" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:onClick="mOnClick"
+                        android:id="@+id/btn10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        android:background="#ffffff"
+                        android:orientation="horizontal"
+                        android:padding="10dp"
+                        android:layout_marginRight="2dp"
+
+                        >
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:background="@mipmap/c_b10" />
+
+                        <TextView
+
+                            android:layout_width="125dp"
+                            android:layout_height="30dp"
+                            android:background="#ffffff"
+                            android:gravity="center"
+                            android:text="중앙도서관" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:onClick="mOnClick"
+                        android:id="@+id/btn11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        android:background="#ffffff"
+                        android:orientation="horizontal"
+                        android:padding="10dp"
+                        android:layout_marginLeft="2dp"
+
+                        >
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:background="@mipmap/c_b11" />
+
+                        <TextView
+
+                            android:layout_width="125dp"
+                            android:layout_height="30dp"
+                            android:background="#ffffff"
+                            android:gravity="center"
+                            android:text="대학본관" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:onClick="mOnClick"
+                        android:id="@+id/btn12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        android:background="#ffffff"
+                        android:orientation="horizontal"
+                        android:padding="10dp"
+                        android:layout_marginRight="2dp"
+
+                        >
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:background="@mipmap/c_b12" />
+
+                        <TextView
+
+                            android:layout_width="125dp"
+                            android:layout_height="30dp"
+                            android:background="#ffffff"
+                            android:gravity="center"
+                            android:text="국제관" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:onClick="mOnClick"
+                        android:id="@+id/btn13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        android:background="#ffffff"
+                        android:orientation="horizontal"
+                        android:padding="10dp"
+                        android:layout_marginLeft="2dp"
+
+                        >
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:background="@mipmap/c_b13" />
+
+                        <TextView
+
+                            android:layout_width="125dp"
+                            android:layout_height="30dp"
+                            android:background="#ffffff"
+                            android:gravity="center"
+                            android:text="학생관" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:onClick="mOnClick"
+                        android:id="@+id/btn14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        android:background="#ffffff"
+                        android:orientation="horizontal"
+                        android:padding="10dp"
+                        android:layout_marginRight="2dp"
+
+                        >
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:background="@mipmap/c_b14" />
+
+                        <TextView
+
+                            android:layout_width="125dp"
+                            android:layout_height="30dp"
+                            android:background="#ffffff"
+                            android:gravity="center"
+                            android:text="문무관" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:onClick="mOnClick"
+                        android:id="@+id/btn15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        android:background="#ffffff"
+                        android:orientation="horizontal"
+                        android:padding="10dp"
+                        android:layout_marginLeft="2dp"
+
+                        >
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:background="@mipmap/c_b15" />
+
+                        <TextView
+
+                            android:layout_width="125dp"
+                            android:layout_height="30dp"
+                            android:background="#ffffff"
+                            android:gravity="center"
+                            android:text="운동장" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:onClick="mOnClick"
+                        android:id="@+id/btn16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        android:background="#ffffff"
+                        android:orientation="horizontal"
+                        android:padding="10dp"
+                        android:layout_marginRight="2dp"
+
+                        >
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:background="@mipmap/c_b16" />
+
+                        <TextView
+
+                            android:layout_width="125dp"
+                            android:layout_height="30dp"
+                            android:background="#ffffff"
+                            android:gravity="center"
+                            android:text="행정관(건축예정)" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:onClick="mOnClick"
+                        android:id="@+id/btn17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        android:background="#ffffff"
+                        android:orientation="horizontal"
+                        android:padding="10dp"
+                        android:layout_marginLeft="2dp"
+
+                        >
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:background="@mipmap/c_b17" />
+
+                        <TextView
+
+                            android:layout_width="125dp"
+                            android:layout_height="30dp"
+                            android:background="#ffffff"
+                            android:gravity="center"
+                            android:text="이공관" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:onClick="mOnClick"
+                        android:id="@+id/btn18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        android:background="#ffffff"
+                        android:orientation="horizontal"
+                        android:padding="10dp"
+                        android:layout_marginRight="2dp"
+
+                        >
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:background="@mipmap/c_b18" />
+
+                        <TextView
+
+                            android:layout_width="125dp"
+                            android:layout_height="30dp"
+                            android:background="#ffffff"
+                            android:gravity="center"
+                            android:text="제2피어선빌딩" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:onClick="mOnClick"
+                        android:id="@+id/btn19"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        android:background="#ffffff"
+                        android:orientation="horizontal"
+                        android:padding="10dp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="2dp"
+
+                        >
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:background="@mipmap/c_b19" />
+
+                        <TextView
+
+                            android:layout_width="125dp"
+                            android:layout_height="30dp"
+                            android:background="#ffffff"
+                            android:gravity="center"
+                            android:text="제2국제관" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:onClick="mOnClick"
+                        android:id="@+id/btn20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        android:background="#ffffff"
+                        android:orientation="horizontal"
+                        android:padding="10dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginBottom="2dp"
+
+                        >
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:background="@mipmap/c_b20" />
+
+                        <TextView
+
+                            android:layout_width="125dp"
+                            android:layout_height="30dp"
+                            android:background="#ffffff"
+                            android:gravity="center"
+                            android:text="제3국제관" />
+                    </LinearLayout>
+
+
+                </GridLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:background="@mipmap/chongjang"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginBottom="15dp"
+                android:textStyle="bold"
+                android:text="평택대학교는“보라, 내가 새일을 행하리라” 라는 피어선 박사의 기독교 정신을 바탕으로 창학된 이래 1981년 대학으로 설립되어 오랜 전통과 힘찬 젊음이 공존하는 대학입니다."/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginBottom="15dp"
+                android:textStyle="bold"
+                android:text="본교는 21세기 들어서 맞이한 서해안 시대와 함께 무한경쟁의 세계화, 급변하는 지식정보화 사회에서 선도적 역할을 담당할 수 있도록 연구 시설 및 제도를 확충, 시대가 필요로 하는 교육과정으로 대폭 혁신하고 학생들이 자발적으로 참여하는 교육을 행하고 있습니다."/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginBottom="15dp"
+                android:textStyle="bold"
+                android:text="특히 정보화 국제화 시대의 기초적인 외국어와 컴퓨터 교육을 더욱 강화하고 해외 15개국 41개의 우수한 대학과의 국제교류를 통해 실력과 국제 감각을 갖춘 인재를 육성하고 있습니다."/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginBottom="15dp"
+                android:textStyle="bold"
+                android:text="또한 지역사회와의 연대 및 산학협력을 통한 다양한 연계 프로그램의 개발로 지역과 함께 발돋움하고 있습니다. 이러한 노력들로 본교가 대교협 평가에서 우수대학으로 선정되는 등 빛나는 결과로 드러났습니다."/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginBottom="15dp"
+                android:textStyle="bold"
+                android:text="평택대학교는 여러분의 꿈과 희망을 실현할 수 있도록 미래를 준비하게 하고 변화를 두려워 하지 않는 도전정신을 심어 드리겠습니다."/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginBottom="15dp"
+                android:textStyle="bold"
+                android:text="앞으로도 시대에 부응하고 미래를 준비하는 교육으로 누구보다도 미래를 앞서 개척하는 생동감 있고 역동적인 교육을 제공하겠습니다."/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginBottom="15dp"
+                android:textStyle="bold"
+                android:text="감사합니다."/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

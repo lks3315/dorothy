@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="dorothy.dorothy" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+ //INTERNET퍼미션
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+//전화 퍼미션
+    <uses-permission android:name="android.permission.DIAL_PHONE" />
+//다이얼퍼미션
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/main_icon"
+        android:label="평택대학교"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+ //하드웨어가속
+        <activity
+            android:name=".CallActivity"
+            android:screenOrientation="portrait"
+            android:label=""/>
+        <activity
+            android:name=".SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:label="">
+        </activity>
+        <activity
+            android:name=".IntroductionActivity"
+            android:screenOrientation="portrait"
+            android:label="">
+        </activity>
+        <activity
+            android:name=".ScheduleActivity"
+            android:screenOrientation="portrait"
+            android:label="">
+        </activity>
+        <activity
+            android:name=".E_classActivity"
+            android:screenOrientation="portrait"
+            android:label="">
+        </activity>
+        <activity
+            android:name=".Grades_calactivity"
+            android:screenOrientation="portrait"
+            android:label="">
+        </activity>
+        <activity
+            android:name=".MapPopup"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name=".GraduationActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:label="">
+        </activity>
+        <activity
+            android:name=".MapActivity"
+            android:screenOrientation="portrait"
+            android:label=""/>
+        <activity
+            android:name=".BusActivity"
+            android:screenOrientation="portrait"
+            android:label=""/>
+        <activity
+            android:name=".HaksikActivity"
+            android:screenOrientation="portrait"
+            android:label="">
+        </activity>
+        <activity android:name=".Library_seatActivty"
+            android:screenOrientation="portrait"
+            android:label="">
+        </activity>
+
+    </application>
+
+</manifest>

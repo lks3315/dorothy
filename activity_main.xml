@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:id="@+id/drawer_layout"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:fitsSystemWindows="true" tools:openDrawer="start">
+
+    <include layout="@layout/app_bar_main" android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <android.support.design.widget.NavigationView android:id="@+id/nav_view"
+        android:layout_width="wrap_content" android:layout_height="match_parent"
+        android:layout_gravity="start" android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#EAEAEA">
+            <FrameLayout
+                android:layout_width="300dp"
+                android:layout_height="170dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/menu_background"/>
+                <ImageView
+                    android:layout_width="75dp"
+                    android:layout_height="63dp"
+                    android:layout_gravity="right"
+                    android:background="@mipmap/ptu_logo"
+                    android:layout_marginRight="35dp"
+                    android:layout_marginTop="15dp"/>
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/e_class"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0.5dp"
+                android:text="e - class"
+                android:textSize="20dp"
+                android:textColor="#000000"
+                android:padding="10dp"
+                android:paddingLeft="20dp"
+                android:background="#ffffff"/>
+            <TextView
+                android:id="@+id/grades_cal"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0.5dp"
+                android:text="학점계산"
+                android:textSize="20dp"
+                android:textColor="#000000"
+                android:padding="10dp"
+                android:paddingLeft="20dp"
+                android:background="#ffffff"/>
+            <TextView
+                android:id="@+id/haksik"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0.5dp"
+                android:text="즐거운 학식"
+                android:textSize="20dp"
+                android:textColor="#000000"
+                android:padding="10dp"
+                android:paddingLeft="20dp"
+                android:background="#ffffff"/>
+            <TextView
+                android:id="@+id/library_seat"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0.5dp"
+                android:text="열람실 좌석 현황"
+                android:textSize="20dp"
+                android:textColor="#000000"
+                android:padding="10dp"
+                android:paddingLeft="20dp"
+                android:background="#ffffff"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="bottom|center_horizontal"
+                android:paddingBottom="20dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Copyright ⓒ 2016 Dorothy."/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="All rights reserved."/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.design.widget.NavigationView>
+
+
+
+</android.support.v4.widget.DrawerLayout>

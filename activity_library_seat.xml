@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0dp"
+    android:orientation="vertical"
+    tools:context="dorothy.dorothy.Library_seatActivty">
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/toolBar1"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#9C9C9C">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="열람실 좌석 안내"
+            android:textColor="#FFFFFF"
+            android:textSize="22dp" />
+    </android.support.v7.widget.Toolbar>
+    <WebView
+        android:id="@+id/Wv_library_seat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="0px"
+        android:layout_margin="0px"></WebView>
+
+</LinearLayout>
